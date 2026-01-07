@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow – Daily Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>FocusFlow</h1>
+
+    <form id="task-form">
+      <label for="task-input">New Task</label>
+      <input
+        id="task-input"
+        type="text"
+        placeholder="What do you want to do?"
+        required
+      />
+
+      <label for="priority">Priority</label>
+      <select id="priority">
+        <option value="high">High</option>
+        <option value="medium" selected>Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <section aria-live="polite">
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

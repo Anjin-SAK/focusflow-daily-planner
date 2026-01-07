@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 2rem;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+:focus-visible {
+  outline: 3px solid #4f46e5;
+}
