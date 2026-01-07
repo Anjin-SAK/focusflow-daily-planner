@@ -18,7 +18,7 @@ function renderTasks() {
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
 
-    const span = document.createElement("span"); // to learn about span element
+    const span = document.createElement("span"); // to learn about span element // The <span> element in HTML is an inline container used to mark up a part of a text or a document. It does not inherently represent anything and is primarily used for styling purposes or to group elements for scripting. You can apply CSS styles or JavaScript functionality to the content within a <span> without affecting the layout of the document, as it does not create a new block-level element.
     span.textContent = `${task.text} (${task.priority})`;
 
     const deleteBtn = document.createElement("button");
